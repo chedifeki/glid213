@@ -21,19 +21,20 @@ import java.io.PrintWriter;
 )
 public class ExampleServlet extends HttpServlet {
     private String email, phone;
+
     @Override
     public void init(ServletConfig config) throws ServletException {
-         email = config.getInitParameter("email");
-         phone = config.getInitParameter("phone");
+        email = config.getInitParameter("email");
+        phone = config.getInitParameter("phone");
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         PrintWriter out = res.getWriter();
-        res .setContentType("text/html");
-        out.println("<p>email = " + email +"</p>");
-        out.println("<p>phone = " + phone+"</p>");
+        res.setContentType("text/html");
+        out.println("<p>email = " + email + "</p>");
+        out.println("<p>phone = " + phone + "</p>");
         out.close();
     }
 

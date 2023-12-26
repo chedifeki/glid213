@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="affichage" method="post">
+	Coordonnées<br>
+	<fieldset>
+	Civilité : <input type="radio" name="Civilité" value="Monsieur"> M. <input type="radio" name="Civilité" value="Mademoiselle"> Mlle
+	<input type="radio" name="Civilité" value="Madame">Mme<br>
+	Nom : <input name="Nom"><br>
+	Adresse : <input name="Adresse"><br>
+	Code Postal : <input name="Code_Postal"><br>
+	Ville : <input name="Ville">
+	<br>
+		Pays : <select name="Pays">
+		<option value="France" selected>France</option>
+		<option value="Tunis">Tunisie</option>
+		<option value="Egypte">Egypte</option>
+		</select><br><br>Centre d'intérêts : <input type="checkbox" name="Centre_Interet" value="Sport">Sport 
+		<input type="checkbox" name="Centre_Interet" value="Cinéma">Cinéma<br>
+		<input type="checkbox" name="Centre_Interet" value="Internet"> Internet 
+		<input type="checkbox" name="Centre_Interet" value="Voyage">Voyages<br>
+	</fieldset>
+	Message :
+	<fieldset>
+		 <br><br><textarea style="width: 369px; height: 87px; " name="Message"></textarea>
+		<br>
+		</fieldset>
+		<input type="submit" value="Envoyer"><input type="reset" value="Recommencer">
+	</form>
+</body>
+</html>
