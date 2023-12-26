@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/ExampleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Project Init and ExampleServlet" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -259,11 +250,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703613411971</updated>
-      <workItem from="1703613413875" duration="2514000" />
+      <workItem from="1703613413875" duration="3667000" />
     </task>
+    <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
+      <option name="closed" value="true" />
+      <created>1703617112721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703617112721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project Init and ExampleServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Init and ExampleServlet" />
   </component>
 </project>
