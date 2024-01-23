@@ -18,6 +18,7 @@
     </properties>
     <modules>
         <module>app_1</module>
+        <module>simple-auth-app</module>
     </modules>
 
     <dependencies>

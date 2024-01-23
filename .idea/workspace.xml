@@ -9,12 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Project Init and ExampleServlet">
-      <change afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/AffichageServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_1/src/main/webapp/AffichForm.html" afterDir="false" />
+    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Form">
+      <change afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/RefreshServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/RequestDisplayServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/UserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/AuthView.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/ExampleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/ExampleServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_1/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/app_1/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +32,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jsp File" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -43,6 +54,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2aE84A8jdno2eZF0me7kq3oaSxx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,6 +66,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.Tomcat 10.1.17 JavaScript.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -58,6 +75,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-auth-app/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +88,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.17">
     <configuration name="Tomcat 10.1.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.17" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -77,6 +100,11 @@
         <artifact name="app_1:war">
           <settings>
             <option name="CONTEXT_PATH" value="/app_1_war" />
+          </settings>
+        </artifact>
+        <artifact name="simple-auth-app:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/simple_auth_app_war" />
           </settings>
         </artifact>
       </deployment>
@@ -155,6 +183,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="app_1:war" />
+          <artifact name="simple-auth-app:war" />
         </option>
       </method>
     </configuration>
@@ -257,7 +286,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703613411971</updated>
-      <workItem from="1703613413875" duration="6527000" />
+      <workItem from="1703613413875" duration="7159000" />
+      <workItem from="1703872192407" duration="24000" />
+      <workItem from="1706032361645" duration="6123000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
       <option name="closed" value="true" />
@@ -275,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703617364197</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Form">
+      <option name="closed" value="true" />
+      <created>1703622067326</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703622067326</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +322,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Init and ExampleServlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Init and ExampleServlet" />
+    <MESSAGE value="Form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Form" />
   </component>
 </project>
