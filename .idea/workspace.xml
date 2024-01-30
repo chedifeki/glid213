@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple auth App">
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/Routes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/InscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/IndexView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/authentification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +285,7 @@
       <workItem from="1703872192407" duration="24000" />
       <workItem from="1706032361645" duration="6323000" />
       <workItem from="1706550246337" duration="855000" />
-      <workItem from="1706637207006" duration="5292000" />
+      <workItem from="1706637207006" duration="5725000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
       <option name="closed" value="true" />
@@ -328,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706041378786</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Simple auth App">
+      <option name="closed" value="true" />
+      <created>1706643236858</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706643236858</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

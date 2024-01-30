@@ -21,7 +21,7 @@ public class AuthController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String login = req.getParameter("login");
-        String pwd = req.getParameter("password");
+        String pwd = req.getParameter("pwd");
         var found = false;
         ServletContext context = getServletContext();
         List<Utilisateur> users = (List<Utilisateur>) context.getAttribute(CONTEXT_USER_LIST);
@@ -42,7 +42,7 @@ public class AuthController extends HttpServlet {
             }
 
             if (!found){
-                req.setAttribute("erreur", "veuillez verifier vos paramètres!");
+                req.setAttribute(ERROR, "veuillez verifier vos paramètres!");
                 var rd = context.getRequestDispatcher("/authentification");
                 rd.forward(req, resp);
             }
