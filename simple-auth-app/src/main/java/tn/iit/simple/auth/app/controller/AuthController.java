@@ -46,6 +46,10 @@ public class AuthController extends HttpServlet {
                 var rd = context.getRequestDispatcher("/authentification");
                 rd.forward(req, resp);
             }
+            else {
+                var rd = context.getRequestDispatcher("/index");
+                rd.forward(req, resp);
+            }
         }
 
     }

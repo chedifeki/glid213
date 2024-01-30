@@ -28,6 +28,7 @@ public class InscriptionController extends HttpServlet {
         String login = req.getParameter("login");
         String pwd = req.getParameter("pwd");
         Utilisateur user = new Utilisateur(nom, prenom, login,pwd);
+        System.out.println(user);
         ServletContext context = getServletContext();
         List<Utilisateur> users = (List<Utilisateur>) context.getAttribute(CONTEXT_USER_LIST);
         if (users == null){

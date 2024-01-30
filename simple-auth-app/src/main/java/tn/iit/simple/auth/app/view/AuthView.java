@@ -45,7 +45,7 @@ public class AuthView extends HttpServlet {
                 "        </tr>\n" +
                 "        <tr>\n" +
                 "            <td>Mot de Passe:</td>\n" +
-                "            <td><input type=\"password\" name=\"mot_de_passe\" placeholder=\"Mot de Passe\"/></td>\n" +
+                "            <td><input type=\"password\" name=\"pwd\" placeholder=\"Mot de Passe\"/></td>\n" +
                 "        </tr>\n" +
                 "        <tr>\n" +
                 "            <td><input type=\"submit\" value=\"Valider\"/></td>\n" +

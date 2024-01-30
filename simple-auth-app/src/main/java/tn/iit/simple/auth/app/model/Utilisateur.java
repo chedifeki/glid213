@@ -47,4 +47,14 @@ public class Utilisateur {
     public void setMot_de_passe(String mot_de_passe) {
         this.mot_de_passe = mot_de_passe;
     }
+
+    @Override
+    public String toString() {
+        return "Utilisateur{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", login='" + login + '\'' +
+                ", mot_de_passe='" + mot_de_passe + '\'' +
+                '}';
+    }
 }
