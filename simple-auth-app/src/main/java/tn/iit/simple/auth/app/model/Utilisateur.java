@@ -1,14 +1,14 @@
 package tn.iit.simple.auth.app.model;
 
-public class UserModel {
+public class Utilisateur {
 
     private String nom, prenom, login, mot_de_passe;
 
-    public UserModel() {
+    public Utilisateur() {
         this("admin", "admin", "admin", "admin");
     }
 
-    public UserModel(String nom, String prenom, String login, String mot_de_passe) {
+    public Utilisateur(String nom, String prenom, String login, String mot_de_passe) {
         this.nom = nom;
         this.prenom = prenom;
         this.login = login;
@@ -40,7 +40,7 @@ public class UserModel {
         this.login = login;
     }
 
-    public String getMot_de_passe() {
+    public String getPwd() {
         return mot_de_passe;
     }
 

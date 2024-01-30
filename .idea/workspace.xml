@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="app_1:war" />
+      <artifact name="simple-auth-app:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Form">
-      <change afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/RefreshServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_1/src/main/java/tn/iit/app_1/RequestDisplayServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/AuthView.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple auth App">
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/Routes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/InscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/IndexView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/authentification.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.Tomcat 10.1.17 JavaScript.executor": "Debug",
+    "JavaScript Debug.authentification.html.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.17.executor": "Run",
@@ -75,7 +75,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-auth-app/src/main/webapp",
+    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-auth-app/src/main/webapp/WEB-INF",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,24 +84,23 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.17">
+    <configuration name="authentification.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/simple_auth_app_war/authentification.html">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 10.1.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.17" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="app_1:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/app_1_war" />
-          </settings>
-        </artifact>
         <artifact name="simple-auth-app:war">
           <settings>
             <option name="CONTEXT_PATH" value="/simple_auth_app_war" />
@@ -182,7 +181,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="app_1:war" />
           <artifact name="simple-auth-app:war" />
         </option>
       </method>
@@ -274,9 +272,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JavaScript Debug.authentification.html" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.17" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.96" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.authentification.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -288,7 +292,9 @@
       <updated>1703613411971</updated>
       <workItem from="1703613413875" duration="7159000" />
       <workItem from="1703872192407" duration="24000" />
-      <workItem from="1706032361645" duration="6123000" />
+      <workItem from="1706032361645" duration="6323000" />
+      <workItem from="1706550246337" duration="855000" />
+      <workItem from="1706637207006" duration="5292000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
       <option name="closed" value="true" />
@@ -314,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703622067326</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Simple auth App">
+      <option name="closed" value="true" />
+      <created>1706041378786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706041378786</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +337,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Init and ExampleServlet" />
     <MESSAGE value="Form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form" />
+    <MESSAGE value="Simple auth App" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple auth App" />
   </component>
 </project>

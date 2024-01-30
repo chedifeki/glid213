@@ -1,14 +1,24 @@
 package tn.iit.simple.auth.app.view;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import tn.iit.simple.auth.app.Constants;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import static tn.iit.simple.auth.app.Constants.ERROR;
+
+@WebServlet(value="/authentification")
 public class AuthView extends HttpServlet {
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req,resp);
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -20,9 +30,11 @@ public class AuthView extends HttpServlet {
                 "    <meta charset=\"UTF-8\">\n" +
                 "    <title>Inscription</title>\n" +
                 "</head>\n" +
-                "<body>\n" );
-        if (req.getAttribute("erreur") != null){
-            out.println("<p>" + req.getAttribute("erreur") +"</p>");
+                "<body>\n" +
+                "<p align=\"Left\"><a href=\"Inscription.html\">Inscription</a></p>");
+        if (req.getAttribute(ERROR) != null){
+            System.out.println(req.getAttribute(ERROR));
+            out.println("<p>" + req.getAttribute(ERROR) +"</p>");
         }
         out.println(
                 "<form method=\"post\" action=\"AuthController\">\n" +
