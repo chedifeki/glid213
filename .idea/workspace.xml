@@ -9,13 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple auth App">
+    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple auth App - 3">
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/affich.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/controller/InscriptionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/model/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/webapp/Inscription.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -70,7 +69,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-auth-app/src/main/webapp/WEB-INF",
+    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-jsp-app/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,6 +84,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-jsp-app\src\main" />
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp" />
     </key>
@@ -94,11 +94,17 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/simple_jsp_app_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="simple-auth-app:war">
           <settings>
             <option name="CONTEXT_PATH" value="/simple_auth_app_war" />
+          </settings>
+        </artifact>
+        <artifact name="simple-jsp-app:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/simple_jsp_app_war" />
           </settings>
         </artifact>
       </deployment>
@@ -177,6 +183,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="simple-auth-app:war" />
+          <artifact name="simple-jsp-app:war" />
         </option>
       </method>
     </configuration>
@@ -289,7 +296,7 @@
       <workItem from="1703872192407" duration="24000" />
       <workItem from="1706032361645" duration="6323000" />
       <workItem from="1706550246337" duration="855000" />
-      <workItem from="1706637207006" duration="6494000" />
+      <workItem from="1706637207006" duration="7721000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
       <option name="closed" value="true" />
@@ -339,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706643425398</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Simple auth App - 3">
+      <option name="closed" value="true" />
+      <created>1706644176594</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706644176594</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +364,7 @@
     <MESSAGE value="Project Init and ExampleServlet" />
     <MESSAGE value="Form" />
     <MESSAGE value="Simple auth App" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple auth App" />
+    <MESSAGE value="Simple auth App - 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple auth App - 3" />
   </component>
 </project>

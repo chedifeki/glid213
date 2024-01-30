@@ -19,6 +19,7 @@
     <modules>
         <module>app_1</module>
         <module>simple-auth-app</module>
+        <module>simple-jsp-app</module>
     </modules>
 
     <dependencies>
