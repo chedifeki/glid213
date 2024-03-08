@@ -9,23 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple JSP app">
-      <change afterPath="$PROJECT_DIR$/simple-auth-jsp-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/InscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/model/UtilisateurModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/AuthView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/BienvenuView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/InscriptionView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/auth.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/bienvenu.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/inscription.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/verif.jsp" afterDir="false" />
+    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="JSTL">
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/model/UtilisateurDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/utils/JdbcConnector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple-jsp-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/affich.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/affich.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/InscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/model/UtilisateurModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/model/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/BienvenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/BienvenuView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/bienvenu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/bienvenu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/verif.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/verif.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,32 +63,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.Tomcat 10.1.17 JavaScript.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.authentification.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.17.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Tomcat 8.5.96.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.simple_jsp_app.executor&quot;: &quot;Run&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-jsp-app/src/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.main.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Tomcat 10.1.17 JavaScript.executor": "Debug",
+    "JavaScript Debug.authentification.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 10.1.17.executor": "Run",
+    "Tomcat Server.Tomcat 8.5.96.executor": "Run",
+    "Tomcat Server.simple_jsp_app.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-jsp-app/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-jsp-app\src\main" />
@@ -105,7 +106,7 @@
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-jsp-app\src\main\java\tn\iit\simple\jsp\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.simple_jsp_app">
+  <component name="RunManager">
     <configuration name="authentification.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/simple_auth_app_war/authentification.html">
       <method v="2" />
     </configuration>
@@ -398,7 +399,7 @@
       <workItem from="1709322265095" duration="2258000" />
       <workItem from="1709451187840" duration="36000" />
       <workItem from="1709467567608" duration="7360000" />
-      <workItem from="1709920146312" duration="1430000" />
+      <workItem from="1709920146312" duration="5991000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
       <option name="closed" value="true" />
@@ -464,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706646015891</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="JSTL">
+      <option name="closed" value="true" />
+      <created>1709921928120</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709921928120</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +485,7 @@
     <MESSAGE value="Simple auth App" />
     <MESSAGE value="Simple auth App - 3" />
     <MESSAGE value="Simple JSP app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple JSP app" />
+    <MESSAGE value="JSTL" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSTL" />
   </component>
 </project>

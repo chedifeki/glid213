@@ -7,7 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import tn.iit.simple.jsp.app.auth.model.UtilisateurModel;
+import tn.iit.simple.jsp.app.auth.model.Utilisateur;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -36,9 +36,9 @@ public class InscriptionController extends HttpServlet {
 		String prenom = request.getParameter("prenom");
 		String login = request.getParameter("login");
 		String pwd = request.getParameter("pwd");
-		UtilisateurModel user = new UtilisateurModel(nom, prenom, login, pwd);
+		Utilisateur user = new Utilisateur(nom, prenom, login, pwd);
 		ServletContext application = getServletContext();
-		List<UtilisateurModel> l = (List<UtilisateurModel>) application.getAttribute("listUsers");
+		List<Utilisateur> l = (List<Utilisateur>) application.getAttribute("listUsers");
 		if(l == null) {
 			l = new ArrayList<>();
 		}

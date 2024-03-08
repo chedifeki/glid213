@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import tn.iit.simple.jsp.app.auth.model.UtilisateurModel;
+import tn.iit.simple.jsp.app.auth.model.Utilisateur;
 
 /**
  * Servlet implementation class AuthView
@@ -35,7 +35,7 @@ public class BienvenuView extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		HttpSession session = request.getSession();
-		UtilisateurModel utilisateur = (UtilisateurModel) session.getAttribute("courant");
+		Utilisateur utilisateur = (Utilisateur) session.getAttribute("courant");
 		out.println("Bienvenu Mr/Mme : " + utilisateur.getNom() + " " + utilisateur.getPrenom());
 	}
 

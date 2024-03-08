@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<jsp:useBean id="user" class="tn.iit.simple.jsp.app.auth.model.UtilisateurModel" scope="session"/>
+<jsp:useBean id="user" class="tn.iit.simple.jsp.app.auth.model.Utilisateur" scope="session"/>
 <jsp:setProperty property="*" name="user"></jsp:setProperty>
 vous avez saisi :
 <br> Nom: ${param.nom}

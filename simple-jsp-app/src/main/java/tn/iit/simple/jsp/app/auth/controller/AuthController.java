@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import tn.iit.simple.jsp.app.auth.model.UtilisateurModel;
+import tn.iit.simple.jsp.app.auth.model.Utilisateur;
 
 import java.io.IOException;
 import java.util.List;
@@ -41,13 +41,13 @@ public class AuthController extends HttpServlet {
         boolean trouve = false;
         HttpSession session = request.getSession();
         ServletContext application = getServletContext();
-        List<UtilisateurModel> l = (List<UtilisateurModel>) application.getAttribute("listUsers");
+        List<Utilisateur> l = (List<Utilisateur>) application.getAttribute("listUsers");
         if (l == null) {
             request.setAttribute("erreur", "Aucun utilisateurs n'est inscrit !!!");
             RequestDispatcher rd = application.getRequestDispatcher("/auth.jsp");
             rd.forward(request, response);
         } else {
-            for (UtilisateurModel utilisateur : l) {
+            for (Utilisateur utilisateur : l) {
                 if (utilisateur.getLogin().equals(login) && utilisateur.getPwd().equals(pwd)) {
                     trouve = true;
                     session.setAttribute("courant", utilisateur);

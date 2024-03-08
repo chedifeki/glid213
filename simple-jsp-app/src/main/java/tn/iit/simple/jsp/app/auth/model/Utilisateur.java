@@ -1,6 +1,6 @@
 package tn.iit.simple.jsp.app.auth.model;
 
-public class UtilisateurModel {
+public class Utilisateur {
 	private String nom="";
 	private String prenom="";
 	private String login="";
@@ -38,7 +38,7 @@ public class UtilisateurModel {
 		this.pwd = pwd;
 	}
 
-	public UtilisateurModel(String nom, String prenom, String login, String pwd) {
+	public Utilisateur(String nom, String prenom, String login, String pwd) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
@@ -46,7 +46,7 @@ public class UtilisateurModel {
 		this.pwd = pwd;
 	}
 
-	public UtilisateurModel() {
+	public Utilisateur() {
 		super();
 	}
 
