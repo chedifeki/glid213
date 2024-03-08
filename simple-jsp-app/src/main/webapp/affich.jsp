@@ -16,7 +16,7 @@
         <li>Current Time : <%= new Date()%></li>
         <li>Hostname : <%= request.getRemoteHost()%></li>
         <li>Session ID : <%= session.getId()%></li>
-        <li>testparam : <%= request.getParameter("testparam")%></li>
+        <li>testparam : <%= request.getParameter("testparam")%>< /li>
     </ul>
 </body>
 </html>

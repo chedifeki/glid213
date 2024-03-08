@@ -2,19 +2,30 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="simple-auth-app:war" />
+      <artifact name="simple-jsp-app:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple auth App - 3">
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/affich.jsp" afterDir="false" />
+    <list default="true" id="d188e2f8-106d-46ab-8a5f-0bb8d83c4d1e" name="Changes" comment="Simple JSP app">
+      <change afterPath="$PROJECT_DIR$/simple-auth-jsp-app/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/controller/InscriptionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/model/UtilisateurModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/AuthView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/BienvenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/java/tn/iit/simple/jsp/app/auth/view/InscriptionView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/auth.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/bienvenu.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/inscription.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/verif.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple-auth-app/src/main/java/tn/iit/simple/auth/app/view/AuthView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/affich.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/simple-jsp-app/src/main/webapp/affich.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,59 +68,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.Tomcat 10.1.17 JavaScript.executor": "Debug",
-    "JavaScript Debug.authentification.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Tomcat Server.Tomcat 10.1.17.executor": "Run",
-    "Tomcat Server.Tomcat 8.5.96.executor": "Run",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-jsp-app/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.Tomcat 10.1.17 JavaScript.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.authentification.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.17.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 8.5.96.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.simple_jsp_app.executor&quot;: &quot;Run&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chedi/Documents/iit/GLID200/GLID213/simple-jsp-app/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-jsp-app\src\main" />
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-auth-app\src\main\webapp" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-jsp-app\src\main\webapp" />
+      <recent name="C:\Users\chedi\Documents\iit\GLID200\GLID213\simple-jsp-app\src\main\java\tn\iit\simple\jsp\app" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.17">
+  <component name="RunManager" selected="Tomcat Server.simple_jsp_app">
     <configuration name="authentification.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/simple_auth_app_war/authentification.html">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 10.1.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.17" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/simple_jsp_app_war/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="simple-auth-app:war">
+        <artifact name="app_1:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/simple_auth_app_war" />
-          </settings>
-        </artifact>
-        <artifact name="simple-jsp-app:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/simple_jsp_app_war" />
+            <option name="CONTEXT_PATH" value="/app_1_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="3e4f1c3b-df7c-479b-8bcc-db76524e9c9d" />
+        <option name="BASE_DIRECTORY_NAME" value="276e567f-eb90-411d-9334-c84ae995c834" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -117,7 +126,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="50277" />
+        <option name="DEBUG_PORT" value="50697" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -182,8 +191,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="simple-auth-app:war" />
-          <artifact name="simple-jsp-app:war" />
+          <artifact name="app_1:war exploded" />
         </option>
       </method>
     </configuration>
@@ -273,9 +281,97 @@
         </option>
       </method>
     </configuration>
+    <configuration name="simple_jsp_app" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="simple-jsp-app:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/simple_jsp_app_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="a66f93ec-a740-4920-9b1f-370094345256" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50699" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="simple-jsp-app:war" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.authentification.html" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.17" />
+      <item itemvalue="Tomcat Server.simple_jsp_app" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.96" />
     </list>
     <recent_temporary>
@@ -296,7 +392,13 @@
       <workItem from="1703872192407" duration="24000" />
       <workItem from="1706032361645" duration="6323000" />
       <workItem from="1706550246337" duration="855000" />
-      <workItem from="1706637207006" duration="7721000" />
+      <workItem from="1706637207006" duration="7807000" />
+      <workItem from="1707155348908" duration="771000" />
+      <workItem from="1709317299115" duration="3754000" />
+      <workItem from="1709322265095" duration="2258000" />
+      <workItem from="1709451187840" duration="36000" />
+      <workItem from="1709467567608" duration="7360000" />
+      <workItem from="1709920146312" duration="1430000" />
     </task>
     <task id="LOCAL-00001" summary="Project Init and ExampleServlet">
       <option name="closed" value="true" />
@@ -354,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706644176594</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Simple JSP app">
+      <option name="closed" value="true" />
+      <created>1706646015891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706646015891</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +475,7 @@
     <MESSAGE value="Form" />
     <MESSAGE value="Simple auth App" />
     <MESSAGE value="Simple auth App - 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simple auth App - 3" />
+    <MESSAGE value="Simple JSP app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simple JSP app" />
   </component>
 </project>
